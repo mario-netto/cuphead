@@ -1,0 +1,44 @@
+@use 'variaveis';
+
+.boss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: variaveis.$corFundoSecundaria;
+    padding-bottom: 64px;
+    
+    .title {
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 32px;
+    }
+
+    .button {
+        margin-top: 32px;
+    }
+   
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        margin: 0 32px;
+        
+        &__item {
+            max-width: 208px;
+            background-color: variaveis.$corFundoPrincipal;
+            border-radius: 20px;
+            box-shadow: 3px 5px 8px 0px #0000003b;
+
+            img {
+                max-width: 100%;
+            }
+
+            .title--small {
+                background-color: variaveis.$corNomeBoss;;
+                text-align: center;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+        }
+    }
+}

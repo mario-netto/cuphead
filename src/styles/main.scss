@@ -1,6 +1,8 @@
 @use 'variaveis';
 @use 'hero';
 @use 'about';
+@use 'separator';
+@use 'boss';
 
 @font-face {
     font-family: Bluebird;
@@ -18,6 +20,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+}
+
+@mixin text($fontSize: 1em) {
+    color: variaveis.$corTexto;
+    font-size: $fontSize;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.4em;
+}
+
+
+@mixin title($fontSize: 2.8em) {
+    color: variaveis.$corTitulo;
+    font-size: $fontSize;
+    line-height: 1.2em;
+    font-family: Bluebird, Helvetica, sans-serif;
+    font-size: 700;
+}
+
+.title--small {
+    @include title(1.5em);
+}
+
+
+.title {
+    @include title;
+}
+
+.text {
+    @include text;
 }
 
 .container {
@@ -41,3 +73,8 @@
     border-radius: 0.25em;
     cursor: pointer;
 }
+
+// .apagar {
+//     background-color: variaveis.$corFundoSecundaria;
+//     height: 100vh;
+// }

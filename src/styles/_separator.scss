@@ -1,0 +1,20 @@
+@use 'variaveis';
+
+.separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: variaveis.$corFundoSecundaria;
+
+    &__border {
+        width: 508px;
+        height: 2px;
+        background-color: #d8b647;
+    }
+
+    &__image {
+        max-width: 88px;
+        margin: 0 26px;
+        opacity: 60%;
+    }
+}
