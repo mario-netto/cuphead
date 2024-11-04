@@ -1,0 +1,43 @@
+@use 'variaveis';
+@use 'hero';
+@use 'about';
+
+@font-face {
+    font-family: Bluebird;
+    src: url(../../assets/fonts/Bluebird.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Bluebird;
+    src: url(../../assets/fonts/BluebirdSfBd.otf);
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    // background-color: red;
+}
+
+.button {
+    display: inline-block;
+    background-color: variaveis.$corBotao;
+    color: #ece8e7;
+    font-size: 22px;
+    padding: 0.6em 1em;
+    font-family: Bluebird;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.05em;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
