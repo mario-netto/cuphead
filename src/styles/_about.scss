@@ -8,6 +8,11 @@
         justify-content: space-between;
         align-items: center;
         padding: 40px 0;
+
+        @media (max-width: 768px) {
+            display: block;
+            text-align: center;
+        }
         
         &__image {
             max-width: 55%;
@@ -19,8 +24,17 @@
         &__text {
             margin-right: 56px;
 
+            @media (max-width: 768px) {
+                margin: 32px; 
+                text-align: left;      
+            }
+
             .title {
                 margin-bottom: 16px;
+
+                @media (max-width: 768px) {
+                    margin-top: 16px;
+                }
             }
         }
     }

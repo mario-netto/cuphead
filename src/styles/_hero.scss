@@ -8,10 +8,15 @@
         justify-content: space-around;
         align-items: center;
 
+        @media (max-width: 768px) {
+            display: block;
+        }
+
         &__logo {
             display: flex;
             flex-direction: column;
             align-items: center;
+
             img {
                     max-width: 380px;
                     width: 100%;
@@ -23,6 +28,10 @@
             img {
                 max-width: 560px;
                 width: 100%;
+
+                @media (max-width: 768px) {
+                    margin-top: 16px;
+                }
             }
         }
     }

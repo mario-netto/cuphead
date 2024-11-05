@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
+    <!-- header -->
+     <section class="header">
+        <div class="header__content container">
+            <h1>
+                <img class="header__logo" src="./dist/images/logo.png" alt="Cuphead">
+            </h1>
+            <ul class="header__content__links">
+                <li class="header__content__links__item">
+                    <a class="text--font-title" href="#about-target">Sobre</a>
+                </li>
+                <li class="header__content__links__item">
+                    <a class="text--font-title" href="#expansion-target">DLC</a>
+                </li>
+                <li class="header__content__links__item">
+                    <a class="text--font-title" href="#music-target">Música</a>
+                </li>
+                <li class="header__content__links__item">
+                    <a class="text--font-title button" href="#">Comprar</a>
+                </li>
+            </ul>
+        </div>
+     </section>
 
     <!-- hero -->
     <section class="hero">
@@ -38,7 +60,7 @@
     </section>
 
     <!-- about  -->
-    <section class="about">
+    <section id="about-target" class="about">
         <div class="about__content container">
             <img class="about__content__image"" src="./dist/images/ch-gif.gif" alt="" >
             <div class="about__content__text">
@@ -82,7 +104,7 @@
     </section>
     
     <!-- expansion -->
-    <section class="expansion">
+    <section id="expansion-target" class="expansion">
         <div class="expansion__content container">
             <div class="expansion__content__text">
                 <h2 class="title">Nova DLC</h2>
@@ -100,7 +122,7 @@
     </section>
 
     <!-- music -->
-    <section class="music">
+    <section id="music-target" class="music">
         <div class="music__content container">
             <h2 class="title">CUPHEAD SHEET MUSIC</h2>
             <p class="text--font-title">AVAILABLE NOW</p>
@@ -110,13 +132,18 @@
     </section>
 
     <!-- footer -->
-     <footer class="footer">
+        <footer class="footer">
         <div class="footer__content container">
             <p class="text">
                 © 2024 Site criado por <a href="">Mario Netto</a>
             </p>
         </div>
+    </footer>
 
-     </footer>
+    <!-- back to top -->
+    <!-- <button class="back-to-top" onclick="scrollToTop()">⬆ Voltar ao Topo</button> -->
+    <img class="back-to-top" src="./src/images/top.png" alt="voltar ao topo">
+
+    <script src="src/scripts/main.js"></script>
 </body>
 </html>

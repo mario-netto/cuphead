@@ -22,9 +22,14 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 24px;
         margin: 0 32px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
         
         &__item {
             max-width: 208px;
+            width: 100%;
             background-color: variaveis.$corFundoPrincipal;
             border-radius: 20px;
             box-shadow: 3px 5px 8px 0px #0000003b;

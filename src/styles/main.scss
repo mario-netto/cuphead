@@ -7,6 +7,7 @@
 @use 'available';
 @use 'music';
 @use 'footer';
+@use 'header';
 
 @font-face {
     font-family: Bluebird;
@@ -98,4 +99,21 @@
     &:hover {
         background-color: variaveis.$corBotaoHover;
     }
+}
+
+.back-to-top {
+    position: fixed; 
+    bottom: 20px;    
+    right: 20px;  
+    cursor: pointer; 
+    display: none; 
+    z-index: 1000;
+    width: 64px;
+    opacity: 60%;
+}
+
+.back-to-top:hover {
+    opacity: 100%;
+    bottom: 22px;    
+    right: 22px;
 }
