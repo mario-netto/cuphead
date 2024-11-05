@@ -1,0 +1,20 @@
+@use 'variaveis';
+
+.footer {
+    background-color: variaveis.$corFundoPrincipal;
+
+    &__content {
+
+        p {
+            text-align: center;
+            font-size: 14px;
+            padding: 16px;
+
+            a {
+                &:hover {
+                    color: #ED0105;
+                }
+            }
+        }
+    }
+}

@@ -5,6 +5,14 @@
 @use 'boss';
 @use 'expansion';
 @use 'available';
+@use 'music';
+@use 'footer';
+
+@font-face {
+    font-family: Bluebird;
+    src: url(../../assets/fonts/BluebirdLiExt.otf);
+    font-weight: 100;
+}
 
 @font-face {
     font-family: Bluebird;
@@ -14,7 +22,7 @@
 
 @font-face {
     font-family: Bluebird;
-    src: url(../../assets/fonts/BluebirdSfBd.otf);
+    src: url(../../assets/fonts/BluebirdSfBdExt.otf);
     font-weight: 700;
 }
 
@@ -32,13 +40,21 @@
     line-height: 1.4em;
 }
 
+@mixin text-font-tilte($fontSize: 1.6em) {
+    color: variaveis.$corTitulo;
+    font-size: $fontSize;
+    line-height: 1.2em;
+    font-family: Bluebird, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
 
 @mixin title($fontSize: 2.8em) {
     color: variaveis.$corTitulo;
     font-size: $fontSize;
     line-height: 1.2em;
     font-family: Bluebird, Helvetica, sans-serif;
-    font-size: 700;
+    font-weight: 700;
 }
 
 .title--small {
@@ -52,6 +68,10 @@
 
 .text {
     @include text;
+}
+
+.text--font-title {
+    @include text-font-tilte()
 }
 
 .container {
@@ -74,9 +94,8 @@
     letter-spacing: 0.05em;
     border-radius: 0.25em;
     cursor: pointer;
-}
 
-// .apagar {
-//     background-color: variaveis.$corFundoSecundaria;
-//     height: 100vh;
-// }
+    &:hover {
+        background-color: variaveis.$corBotaoHover;
+    }
+}
