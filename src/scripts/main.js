@@ -4,6 +4,10 @@ document.addEventListener('DOMContentLoaded', function(){
     const menu = document.querySelector('.header__mobile__links');
     const backToTopButton = document.querySelector('.back-to-top');
 
+    if (window.location.hash) {
+        window.history.pushState("", document.title, window.location.pathname + window.location.search);
+    }
+
     for (let i = 0; i < menuToggle.length; i++) {
         menuToggle[i].addEventListener('click', openCloseToggle);
     }
